@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Button
+  - Knight
+  - TankTan
+  - Ground
+  - Projectile
+  - ActivatableObject
+  - Enemy
+  - BounceSurface
+  - Turret
+  - DestroyableObject
+  - Next
+  - Mage
+  - Health
+  - PlayerWeapon
+  - TakeHP
+  - LimitedBounceObject
+  - GiveHP
+  - Puck
+  - Mirror
+  - SolarPanel
+  - Magnet
+  - MagneticObject
+  - Battery
+  - Explosive
+  - Crate
+  - Lightcube
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - Projectiles
+  - Player
+  - Environment
+  - Enemy
+  - 
+  - 
+  - 
+  - MainCamera_Ignore
+  - Reflection
+  - 
+  - 
+  - 
+  - Objective
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
