@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 573b954ac4f429b4bb44ff289f283b82
+timeCreated: 1488841992
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/prefabs/Gangster_Coat_3.prefab
+  uploadId: 166857

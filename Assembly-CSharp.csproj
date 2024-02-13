@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Player\ModifyMaximumHP.cs" />
     <Compile Include="Assets\Prefabs\Kawaii_Tanks_Project (Free)\Scripts\Layer_Settings_CS.cs" />
     <Compile Include="Assets\Scripts\Objectives\RetrieveObject.cs" />
+    <Compile Include="Assets\Gangsters\DemoScene\camera_gang.cs" />
     <Compile Include="Assets\Scripts\Importer.cs" />
     <Compile Include="Assets\Scripts\EnemyAI\Navigation.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponBase.cs" />

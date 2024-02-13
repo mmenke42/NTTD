@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac9e11ae8748b9345b145e06fe2347e8
+timeCreated: 1488865618
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/prefabs/Gangster_Vest_1.prefab
+  uploadId: 166857

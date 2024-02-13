@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 88bec25cbef4c6b4abd7093af9b2ca7a
+timeCreated: 1488832607
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/DemoScene/GroundMaterial.mat
+  uploadId: 166857

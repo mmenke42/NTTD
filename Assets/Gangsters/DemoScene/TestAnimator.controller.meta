@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fe76cb8b84fed1a40a33d76637d205a6
+timeCreated: 1488825896
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/DemoScene/TestAnimator.controller
+  uploadId: 166857

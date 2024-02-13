@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 52424cf253a90ff419d0cecc6578bacd
+timeCreated: 1488822746
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/Materials/Gun_Thompson.mat
+  uploadId: 166857

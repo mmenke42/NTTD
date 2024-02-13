@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 672950ee1c034da4c8ec869ba3fe4a45
+timeCreated: 1488823350
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/prefabs/InHandRGunT.prefab
+  uploadId: 166857

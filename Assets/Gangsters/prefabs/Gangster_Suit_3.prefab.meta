@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 123bc80e73686fc4e887bb31d31d6037
+timeCreated: 1488842133
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/prefabs/Gangster_Suit_3.prefab
+  uploadId: 166857

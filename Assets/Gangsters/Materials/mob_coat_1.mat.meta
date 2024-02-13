@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7209a56a0c6b3ba45919211ec1f62c7e
+timeCreated: 1488493279
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/Materials/mob_coat_1.mat
+  uploadId: 166857

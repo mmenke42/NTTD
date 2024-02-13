@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5527fa49dc2ecb4419cf724e28896777
+timeCreated: 1488493493
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/Materials/mob_vest_2.mat
+  uploadId: 166857

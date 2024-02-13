@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 97cee1b31022efb4d93b8613f01a6a08
+timeCreated: 1488826575
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 84907
+  packageName: Gangsters
+  packageVersion: 1.0
+  assetPath: Assets/Gangsters/DemoScene/gangster_upperbody.mask
+  uploadId: 166857
