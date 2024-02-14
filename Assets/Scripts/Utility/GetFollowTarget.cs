@@ -20,7 +20,7 @@ public class GetFollowTarget : MonoBehaviour
     private void Start()
     {
         cam = GetComponent<CinemachineVirtualCamera>();
-        playerObj = GameObject.Find("Player");
+        playerObj = GameObject.FindWithTag("Player"); //changed this from finding text name Player to tagged Player
 
         target = playerObj.transform;
         setTarget();

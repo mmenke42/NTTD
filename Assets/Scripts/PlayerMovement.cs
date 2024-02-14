@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     PlayerController _playerController;
     
-    public float modifiedSpeed; //For wepaon holding Speeds
+    public float modifiedSpeed; //For weapon holding Speeds
 
     bool dash = false;
 
