@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
             acceleration -= 0.1f;
         }
         */
-        
+
         /*
         if (!isStopped)
         {
@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
 
         //playerMovement = new Vector3(moveInput.x, 0, moveInput.y) * speed;
         playerMovement = new Vector3(moveInput.x, 0, moveInput.y) * modifiedSpeed * slowSpeed * environmentalEffectSpeed * dragObjectSpeed;
-
+        
         //basic player movement
         //moves the game object this script is attached to based on WASD input 
 

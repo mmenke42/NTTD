@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Ammo_Texture:
-        m_Texture: {fileID: 2800000, guid: f79c3ef19c3d07340820ccf4bb4a80e5, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -76,7 +76,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OnesNumber:
-        m_Texture: {fileID: 2800000, guid: 73b261ef2b6a1d34d9c57b217176e936, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4264a27f1f9f8ed419474b87e4712853, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -160,11 +160,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WeaponAmmo_Texture:
-        m_Texture: {fileID: 2800000, guid: 2c9265ee9822aa449b72d4ca8dbc26c4, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WeaponBody_Texture:
-        m_Texture: {fileID: 2800000, guid: e7c2037f70a083a4989d1e8a8a167c62, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Weapon_Texture:
@@ -190,21 +190,21 @@ Material:
     - _AmmoOneOpacity: 1
     - _AmmoTwoOpacity: 1
     - _Ammo_Eight_Opacity: 1
-    - _Ammo_Eight_Unlocked: 0
-    - _Ammo_Five_Opacity: 0.35
-    - _Ammo_Five_Unlocked: 0
-    - _Ammo_Four_Opacity: 0.35
-    - _Ammo_Four_Unlocked: 0
+    - _Ammo_Eight_Unlocked: 1
+    - _Ammo_Five_Opacity: 1
+    - _Ammo_Five_Unlocked: 1
+    - _Ammo_Four_Opacity: 1
+    - _Ammo_Four_Unlocked: 1
     - _Ammo_Nine_Opacity: 1
-    - _Ammo_Nine_Unlocked: 0
+    - _Ammo_Nine_Unlocked: 1
     - _Ammo_One_Opacity: 1
     - _Ammo_One_Unlocked: 1
     - _Ammo_Seven_Opacity: 1
-    - _Ammo_Seven_Unlocked: 0
+    - _Ammo_Seven_Unlocked: 1
     - _Ammo_Six_Opacity: 1
-    - _Ammo_Six_Unlocked: 0
+    - _Ammo_Six_Unlocked: 1
     - _Ammo_Ten_Opacity: 1
-    - _Ammo_Ten_Unlocked: 0
+    - _Ammo_Ten_Unlocked: 1
     - _Ammo_Three_Opacity: 1
     - _Ammo_Three_Unlocked: 1
     - _Ammo_Two_Opacity: 1
