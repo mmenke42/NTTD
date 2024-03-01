@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1161939400237959217}
   - component: {fileID: 5918689559403385698}
   m_Layer: 0
-  m_Name: Knight
+  m_Name: PistolEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
