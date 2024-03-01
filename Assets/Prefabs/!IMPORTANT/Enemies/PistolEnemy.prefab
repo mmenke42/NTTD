@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0770f426c7f4cea4da0b07d23450e051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponObj: {fileID: 2991646713158447218, guid: 421607d8dfd583c419c413a809dcabeb, type: 3}
+  weaponObj: {fileID: 2991646713158447218, guid: b9bd8b13c0db439468133282e09d78d2, type: 3}
   weaponLocation: {fileID: 8957832556282165980}
 --- !u!1 &4908497901964361157
 GameObject:

@@ -66,7 +66,7 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
 
 
     //controls enemy's weapon
-    protected WeaponController weaponController;
+    //protected WeaponController weaponController;
     protected DataBaseWeaponGrabber weaponGrabber;
 
     [SerializeField] protected bool SetToAttack;
@@ -115,6 +115,7 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
     [SerializeField] public bool ArmoredTarget { get; set; }
     #endregion
 
+    private EnemyWeaponController weaponController;
 
     protected virtual void Awake()
     {
@@ -137,21 +138,22 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
 
         agent = GetComponent<NavMeshAgent>();
 
-        
+
 
         //ensures that if the room  is beaten, this won't spawn again
         //if (GameObject.Find("GameManager").GetComponent<GameManager>().currentNode.isRoomBeaten) { Destroy(this.gameObject); };
 
         //Pass the weapon script that attacthed to the object
-            //weaponController = gameObject.GetComponent<WeaponController>();
-        weaponGrabber = gameObject.GetComponent<DataBaseWeaponGrabber>();
+        //weaponController = gameObject.GetComponent<WeaponController>();
+        //weaponGrabber = gameObject.GetComponent<DataBaseWeaponGrabber>();
 
         //set the enemy name to that of the game object
         //enemyName = this.gameObject.name;
 
         //create's the correct weapon for an enemy based on the spawned enemy's name
         //currentEnemyWeapon = weaponController.MakeWeapon(enemyName);
-        currentEnemyWeapon = weaponGrabber.MakeWeapon(weaponName);
+        //currentEnemyWeapon = weaponGrabber.MakeWeapon(weaponName);
+        weaponController = GetComponent<EnemyWeaponController>();
 
         //sets the initial state of an enemy to docile
         isAggrod = false;
@@ -293,10 +295,13 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
         //manages how quick the player shoots based on their currently equipped weapon
         if (timeBetweenShots <= 0.0f)
         {
-            timeBetweenShots = currentEnemyWeapon.timeBetweenProjectileFire;
+            //timeBetweenShots = currentEnemyWeapon.timeBetweenProjectileFire;
 
-            Shoot();
+            //weaponController.ShootWeapon();
         }
+
+        weaponController.ShootWeapon();
+
     }
 
 

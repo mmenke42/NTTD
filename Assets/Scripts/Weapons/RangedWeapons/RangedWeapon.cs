@@ -23,6 +23,8 @@ public class RangedWeapon : WeaponBase, IShoot
 
     private bool canShoot;
 
+    public bool EnemyVersion;
+
 
     private void Awake()
     {
@@ -112,17 +114,25 @@ public class RangedWeapon : WeaponBase, IShoot
         }
         else
         {
-            weaponName = stats.weaponName;
-            fireRate = stats.fireRate;
-            walkMultiplier = stats.walkMultiplier;
-            projectilePrefab = stats.projectilePrefab;
-            maxActiveProjectiles = stats.maxActiveAmount;
+            if (!EnemyVersion)
+            {
+                weaponName = stats.weaponName;
+                fireRate = stats.fireRate;
+                walkMultiplier = stats.walkMultiplier;
+                projectilePrefab = stats.projectilePrefab;
+                maxActiveProjectiles = stats.maxActiveAmount;
 
-            weaponIcon = stats.weaponIcon;
-            projectileIcon = stats.projectileIcon;
-            ammoCountIcon = stats.ammoCountIcon;
-            maxAmmo = stats.maxAmmo;
-            currentAmmo = maxAmmo;
+                weaponIcon = stats.weaponIcon;
+                projectileIcon = stats.projectileIcon;
+                ammoCountIcon = stats.ammoCountIcon;
+                maxAmmo = stats.maxAmmo;
+                currentAmmo = maxAmmo;
+            }
+            else
+            {
+                projectilePrefab = stats.projectilePrefab;
+            }
+
         }
     }
 
