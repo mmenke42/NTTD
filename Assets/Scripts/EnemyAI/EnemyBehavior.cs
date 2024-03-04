@@ -292,16 +292,7 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
 
     protected virtual void HandleShooting()
     {
-        //manages how quick the player shoots based on their currently equipped weapon
-        if (timeBetweenShots <= 0.0f)
-        {
-            //timeBetweenShots = currentEnemyWeapon.timeBetweenProjectileFire;            
-            
-            //weaponController.ShootWeapon();
-        }
-
         weaponController.ShootWeapon();
-
     }
 
 

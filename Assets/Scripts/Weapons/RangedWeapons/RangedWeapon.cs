@@ -36,6 +36,7 @@ public class RangedWeapon : WeaponBase, IShoot
     }
     void Start()
     {
+        time = fireRate;
         //setStats();
         //if (!projectilePrefab)
         //{
@@ -45,21 +46,17 @@ public class RangedWeapon : WeaponBase, IShoot
     private void Update()
     {
 
-        if (time != fireRate)
-        {
-            canShoot = false;
-        }
-        else if (time >= fireRate)
-        { 
-            canShoot = true; 
-        }
     }
     private void FixedUpdate()
     {
         //reset fire rate WHEN shot
-        if (time <= fireRate)
+        if (time < fireRate)
         {
             time += Time.deltaTime;
+        }
+        else
+        {
+            time = fireRate;
         }
     }
 
@@ -99,10 +96,8 @@ public class RangedWeapon : WeaponBase, IShoot
 
     public void HandleShooting()
     {
-        if (true == true)
+        if (time >= fireRate)
         {
-            //Set fireRate timer = 0, so it can count back up.
-            //This would set 'canShoot = false'
             time = 0.0f;
             Shoot();
         }
