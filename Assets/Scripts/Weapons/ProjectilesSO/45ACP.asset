@@ -19,7 +19,7 @@ MonoBehaviour:
   Damage: 1
   DoSplashDamage: 0
   SplashDamage: 0
-  BounceCount: 1
+  BounceCount: 0
   Speed: 15
   LifeTime: 3
   SplashRadius: 0

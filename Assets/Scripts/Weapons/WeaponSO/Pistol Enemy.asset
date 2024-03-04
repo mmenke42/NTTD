@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Pistol Enemy
   m_EditorClassIdentifier: 
   weaponName: Pistol
-  fireRate: 0.15
-  maxActiveAmount: 10
+  fireRate: 100
+  maxActiveAmount: 1
   walkMultiplier: 1
   projectilePrefab: {fileID: 9099515323765611235, guid: 1732aaa49ab4d154fa14c34d18c4d5bb, type: 3}
   fireWeaponSound: bazooka_fire

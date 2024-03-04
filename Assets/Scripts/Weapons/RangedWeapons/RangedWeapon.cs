@@ -50,7 +50,9 @@ public class RangedWeapon : WeaponBase, IShoot
             canShoot = false;
         }
         else if (time >= fireRate)
-        { canShoot = true; }
+        { 
+            canShoot = true; 
+        }
     }
     private void FixedUpdate()
     {

@@ -295,8 +295,8 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
         //manages how quick the player shoots based on their currently equipped weapon
         if (timeBetweenShots <= 0.0f)
         {
-            //timeBetweenShots = currentEnemyWeapon.timeBetweenProjectileFire;
-
+            //timeBetweenShots = currentEnemyWeapon.timeBetweenProjectileFire;            
+            
             //weaponController.ShootWeapon();
         }
 
