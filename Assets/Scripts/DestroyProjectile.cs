@@ -8,7 +8,7 @@ public class DestroyProjectile : MonoBehaviour
     Projectile bullet;
     BouncingProjectile bounceBullet;
     //ParticleSystem particleObject;
-    UnityEngine.Object destroyedEffect;
+    //UnityEngine.Object destroyedEffect;
 
 
     private Collider coll;
@@ -40,8 +40,8 @@ public class DestroyProjectile : MonoBehaviour
 
         }
 
-        destroyedEffect = Resources.Load("GunEffect");
-        destroyedEffect.GetComponent<ParticleSystem>();
+        //destroyedEffect = Resources.Load("GunEffect");
+        //destroyedEffect.GetComponent<ParticleSystem>();
 
         //particleObject = GetComponentInChildren<ParticleSystem>();
         //particleObject.Stop();
@@ -54,8 +54,8 @@ public class DestroyProjectile : MonoBehaviour
 
         AudioManager.PlayClipAtPosition("explosion_sound",transform.position);
         
-       Object Effect = Instantiate(destroyedEffect, transform.position, Quaternion.identity);
-        Destroy(Effect, 3f);
+       //Object Effect = Instantiate(destroyedEffect, transform.position, Quaternion.identity);
+        //Destroy(Effect, 3f);
 
         //Destroy(gameObject, particleObject.duration);
         Destroy(gameObject);

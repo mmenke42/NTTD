@@ -44,16 +44,16 @@ public class DeathScript : MonoBehaviour
     {
         if (easyDestroy)
         { 
-            deathEffect = (GameObject)Resources.Load("DeathEffect");
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            //deathEffect = (GameObject)Resources.Load("DeathEffect");
+            //Instantiate(deathEffect, transform.position, Quaternion.identity);
         }
         else
         {
             DisableComponents();
             //particleObject.Play();
 
-            deathEffect = (GameObject)Resources.Load("DeathEffect");
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            //deathEffect = (GameObject)Resources.Load("DeathEffect");
+            //Instantiate(deathEffect, transform.position, Quaternion.identity);
         }
         
         //DisableComponents();

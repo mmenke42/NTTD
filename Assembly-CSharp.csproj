@@ -219,7 +219,6 @@
     <Compile Include="Assets\Scripts\EnemyAI\EnemyInfo.cs" />
     <Compile Include="Assets\Scripts\EntityInfo.cs" />
     <Compile Include="Assets\Scripts\Utility\FadeObject.cs" />
-    <Compile Include="Assets\Scripts\Utility\ReflectionControl.cs" />
     <Compile Include="Assets\Scripts\Utility\ItemHover.cs" />
     <Compile Include="Assets\Prefabs\Kawaii_Tanks_Project (Free)\Scripts\Damage_Control_CS.cs" />
     <Compile Include="Assets\Scripts\EnemyAI\EnemyBehavior.cs" />
