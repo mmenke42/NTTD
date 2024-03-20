@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
 
 public class RangedWeapon : WeaponBase, IShoot
 {
@@ -25,6 +26,10 @@ public class RangedWeapon : WeaponBase, IShoot
 
     public bool EnemyVersion;
 
+    [SerializeField] private GameObject muzzleFlashObj;
+
+    private ParticleSystem muzzleFlash;
+
 
     private void Awake()
     {
@@ -42,7 +47,12 @@ public class RangedWeapon : WeaponBase, IShoot
         //{
         //    Debug.LogWarning("No projectile prefab found");
         //}
+
+        muzzleFlash = muzzleFlashObj.GetComponentInChildren<ParticleSystem>();
+
+        muzzleFlash.gameObject.transform.position = shootPoint.position;
     }
+
     private void Update()
     {
 
@@ -71,6 +81,7 @@ public class RangedWeapon : WeaponBase, IShoot
         Instantiate(newProjectile, shootPoint.position, shootPoint.rotation);
         //Instantiate(newProjectile, shootPoint.position, Quaternion.LookRotation(Vector3.up, gameObject.transform.forward));
         
+        muzzleFlash.Play();
     }
 
     public void PlayerShoot()
@@ -79,12 +90,14 @@ public class RangedWeapon : WeaponBase, IShoot
         GameObject newProjectile = projectilePrefab;
         AudioManager.PlayClipAtPosition(stats.fireWeaponSound, shootPoint.position);
 
-        Instantiate(newProjectile, shootPoint.position, shootPoint.rotation).AddComponent<PlayerProjectile>();
+        Instantiate(newProjectile, shootPoint.position, shootPoint.rotation);
         //Instantiate(newProjectile, shootPoint.position, Quaternion.LookRotation(Vector3.up, gameObject.transform.forward));
 
-        currentAmmo--;
+        //currentAmmo--;
 
-        OnPlayerShoot?.Invoke(this, EventArgs.Empty);
+        //OnPlayerShoot?.Invoke(this, EventArgs.Empty);
+
+        muzzleFlash.Play();
 
     }
 
