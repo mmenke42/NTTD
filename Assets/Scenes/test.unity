@@ -863,6 +863,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PistolEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4722999314254737325, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cb1c3451530fa1a45888e674189c1b2f, type: 2}
     - target: {fileID: 4946875555297588837, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: m_Height
       value: 2
@@ -880,6 +884,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bf60c370f3d86843a57fac5a6723af4, type: 2}
+    - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: playerMask.m_Bits
       value: 256
       objectReference: {fileID: 0}
@@ -889,11 +897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: enemyAttackRange_AttackRange
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: enemyAttackRange_BecomeAggro
-      value: 10
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8957832556282165980, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1065,6 +1073,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 212857016962795908, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: stoppingDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 609622249983324292, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05
@@ -1108,6 +1120,22 @@ PrefabInstance:
     - target: {fileID: 4700413116807096972, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: m_Name
       value: PistolEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4722999314254737325, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cb1c3451530fa1a45888e674189c1b2f, type: 2}
+    - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bf60c370f3d86843a57fac5a6723af4, type: 2}
+    - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: enemyAttackRange_AttackRange
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: enemyAttackRange_BecomeAggro
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1534,6 +1562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PistolEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4722999314254737325, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cb1c3451530fa1a45888e674189c1b2f, type: 2}
     - target: {fileID: 4946875555297588837, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: m_Height
       value: 2
@@ -1551,6 +1583,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bf60c370f3d86843a57fac5a6723af4, type: 2}
+    - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: playerMask.m_Bits
       value: 256
       objectReference: {fileID: 0}
@@ -1560,11 +1596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: enemyAttackRange_AttackRange
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8553549918869688137, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: enemyAttackRange_BecomeAggro
-      value: 10
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8957832556282165980, guid: 5b94e92012a58aa44bbfd60d0bbbe65f, type: 3}
       propertyPath: m_LocalPosition.x
