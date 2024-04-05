@@ -1031,7 +1031,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"9cebd62661d86b14e8cddd5b066f4163\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"2aebbd2a3d84f774892af43d0dd62f68\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_DefaultType": 0

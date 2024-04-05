@@ -367,9 +367,6 @@
             "m_Id": "c7b7c82e6d864228a7a3edabe40dfb4f"
         },
         {
-            "m_Id": "1d4ac15ac41c40d18387e6960888f6f3"
-        },
-        {
             "m_Id": "312e3b5e891b45a4b0c153ca2d2800a9"
         },
         {
@@ -554,20 +551,6 @@
                     "m_Id": "0213bcdbe02443e9a2be606dc0360b9d"
                 },
                 "m_SlotId": 2
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "1d4ac15ac41c40d18387e6960888f6f3"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "2d21ff1b41d7459baab790405ba6beaf"
-                },
-                "m_SlotId": 1
             }
         },
         {
@@ -2711,7 +2694,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.18000000715255738,
+        "x": 0.11999999731779099,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -3103,7 +3086,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"ee9213eefa819c34d94de0e39408bb4b\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"12dbe4525feed3c4580d2a0c609aa819\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -3717,42 +3700,6 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "1d4ac15ac41c40d18387e6960888f6f3",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -2800.6669921875,
-            "y": 616.0,
-            "width": 206.666748046875,
-            "height": 36.00006103515625
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "317dcd1efeef44c4a3799000c1bb686e"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "7c4a6b418fef4fae9a57af5e016e3933"
     }
 }
 
@@ -4794,19 +4741,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
-    "m_ObjectId": "317dcd1efeef44c4a3799000c1bb686e",
-    "m_Id": 0,
-    "m_DisplayName": "WeaponAmmo_Texture",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_BareResource": false
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "3216d406dd5e41d3b2edec116ab064f3",
     "m_Id": 1,
@@ -5697,7 +5631,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.029999999329447748,
+        "x": -0.05999999865889549,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -6491,7 +6425,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"4264a27f1f9f8ed419474b87e4712853\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"a2824a4ce9a03b441ada8c5815199901\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -7730,7 +7664,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": -0.019999999552965165,
+        "x": -0.11999999731779099,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -8061,7 +7995,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.12999999523162843,
+        "x": 0.05999999865889549,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -8356,7 +8290,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"f79c3ef19c3d07340820ccf4bb4a80e5\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"c4e1c82d75f4fe84b95518d10a8560e7\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -8453,7 +8387,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.3799999952316284,
+        "x": 0.36000001430511477,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -8513,7 +8447,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": -0.2750000059604645,
+        "x": -0.33000001311302187,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -9220,7 +9154,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": -0.07000000029802323,
+        "x": -0.18000000715255738,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -9520,7 +9454,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"4264a27f1f9f8ed419474b87e4712853\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"a2824a4ce9a03b441ada8c5815199901\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -10885,7 +10819,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.23000000417232514,
+        "x": 0.18000000715255738,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -13032,7 +12966,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.2800000011920929,
+        "x": 0.23999999463558198,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -14025,7 +13959,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.07999999821186066,
+        "x": 0.0,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -14612,7 +14546,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"e7c2037f70a083a4989d1e8a8a167c62\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"12dbe4525feed3c4580d2a0c609aa819\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -15498,7 +15432,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": -0.375,
+        "x": -0.33000001311302187,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
@@ -15757,7 +15691,7 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.33000001311302187,
+        "x": 0.30000001192092898,
         "y": 0.10000000149011612
     },
     "m_DefaultValue": {
