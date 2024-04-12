@@ -50,7 +50,7 @@ Animator:
   m_GameObject: {fileID: 4700413116807096972}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: dadfa3819774d6d4999f58e7584430a4, type: 3}
-  m_Controller: {fileID: 9100000, guid: 48e31cf49f3227d4a9f8629ef964a474, type: 2}
+  m_Controller: {fileID: 9100000, guid: cb1c3451530fa1a45888e674189c1b2f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -108,7 +108,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.9
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 895612c024ae59148b8862e30dcd2897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: c2953f9e2978987449a97d68c6924723, type: 2}
+  stats: {fileID: 11400000, guid: 7bf60c370f3d86843a57fac5a6723af4, type: 2}
   currentState: 0
   maxHealth: 2
   health: 2
@@ -231,7 +231,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.6042881, y: -0.5095339, z: -0.34761262, w: 0.5043577}
   m_LocalPosition: {x: -0.1621, y: 0.023, z: 0.0782}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7608969180924344217}
