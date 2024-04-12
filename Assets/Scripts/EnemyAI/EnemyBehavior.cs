@@ -212,7 +212,7 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
                 nav.ResumeMovement();
                 break;
             case EnemyState.ATTACK:
-                nav.StopMovement();
+                //nav.StopMovement();
                 transform.LookAt(targetToLookAt);
                 HandleShooting();
                 break;
@@ -242,7 +242,16 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
     protected virtual void HandleEnemyAggro()
     {
         //Determines aggro of the enemy
-        isAggrod = Physics.CheckSphere(gameObject.transform.position, enemyAttackRange_BecomeAggro, playerMask);
+        if (Physics.CheckSphere(gameObject.transform.position, enemyAttackRange_BecomeAggro, playerMask))
+        {
+            Ray wallDetect = new Ray(wallDetectPosition, enemyLookDirection);
+
+            if (!Physics.Raycast(wallDetect, out RaycastHit hit, distanceToPlayer, environmentMask))
+            {
+                isAggrod = true;
+            }
+        }
+        //isAggrod = Physics.CheckSphere(gameObject.transform.position, enemyAttackRange_BecomeAggro, playerMask);
         inShootRange = Physics.CheckSphere(gameObject.transform.position, enemyAttackRange_AttackRange, playerMask);
 
         if (isAggrod && TargetingEnabled)
@@ -308,8 +317,8 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
 
 
         currentEntity.GetComponent<Projectile>().direction = enemyLookDirection;
-        var light = currentEntity.AddComponent<Light>();
-        light.color = Color.red;
+        //var light = currentEntity.AddComponent<Light>();
+        //light.color = Color.red;
 
     }
 

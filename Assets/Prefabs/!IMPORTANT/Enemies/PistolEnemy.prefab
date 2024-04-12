@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 0
-  stoppingDistance: 5
+  stoppingDistance: 0
 --- !u!114 &1161939400237959217
 MonoBehaviour:
   m_ObjectHideFlags: 0

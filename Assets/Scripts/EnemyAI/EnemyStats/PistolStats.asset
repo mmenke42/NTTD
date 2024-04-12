@@ -18,9 +18,9 @@ MonoBehaviour:
   MP: 0
   AP: 0
   DEF: 0
-  Health: 1
-  AggroRange: 15
-  AtackRange: 12
+  Health: 5
+  AggroRange: 8
+  AtackRange: 8
   playerMask:
     serializedVersion: 2
     m_Bits: 256
