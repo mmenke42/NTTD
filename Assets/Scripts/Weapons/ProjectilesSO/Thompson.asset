@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a2bc26fd700b3642b2ce0c4f8c0321d, type: 3}
-  m_Name: 45ACP
+  m_Name: Thompson
   m_EditorClassIdentifier: 
   projectileType: 0
   EnvironmentMask:
     serializedVersion: 2
     m_Bits: 512
-  Damage: 2
+  Damage: 1
   DoSplashDamage: 0
   SplashDamage: 0
   BounceCount: 0
-  Speed: 15
-  LifeTime: 3
+  Speed: 20
+  LifeTime: 4
   SplashRadius: 0

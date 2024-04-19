@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 204efd3a2b634e64bb9daf4f76b1fa91, type: 2}
   weaponName: 
-  fireRate: 2
+  fireRate: 1
   walkMultiplier: 0
   weaponIcon: {fileID: 0}
   projectileIcon: {fileID: 0}
