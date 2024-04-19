@@ -117,6 +117,10 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
 
     private EnemyWeaponController weaponController;
 
+    [SerializeField] private GameObject bloodSplatterObj;
+
+    private ParticleSystem bloodSplatter;
+
     protected virtual void Awake()
     {
         TargetingEnabled = true;
@@ -138,7 +142,7 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
 
         agent = GetComponent<NavMeshAgent>();
 
-
+        bloodSplatter = bloodSplatterObj.GetComponentInChildren<ParticleSystem>();
 
         //ensures that if the room  is beaten, this won't spawn again
         //if (GameObject.Find("GameManager").GetComponent<GameManager>().currentNode.isRoomBeaten) { Destroy(this.gameObject); };
@@ -327,6 +331,7 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
     public virtual void TakeDamage(int passedDamage)
     {
         health -= passedDamage;
+        bloodSplatter.Play();
         OnTakeDamage?.Invoke(this, EventArgs.Empty);
     }
 

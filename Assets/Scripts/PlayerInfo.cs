@@ -62,6 +62,10 @@ public class PlayerInfo:MonoBehaviour, IDamagable
     public static event EventHandler OnPlayerSpawn;
     public static event EventHandler OnPlayerWeaponChange;
 
+    [SerializeField] private GameObject bloodSplatterObj;
+
+    private ParticleSystem bloodSplatter;
+
     void Awake()
     {
         _instance = this;
@@ -73,7 +77,8 @@ public class PlayerInfo:MonoBehaviour, IDamagable
         ownedWeapons = new List<WeaponInfo>();
         weaponController = GetComponent<WeaponController>();
 
-        
+        bloodSplatter = bloodSplatterObj.GetComponentInChildren<ParticleSystem>();
+
         AddWeapon("Bazooka");
 
         ArmoredTarget = false;
@@ -157,6 +162,8 @@ public class PlayerInfo:MonoBehaviour, IDamagable
         {
             OnTakeDamage?.Invoke(this, EventArgs.Empty);
             currentHP -= passedDamage;
+
+            bloodSplatter.Play();
 
             currentHP = (currentHP >= 0) ? currentHP : 0;
 

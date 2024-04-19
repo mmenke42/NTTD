@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: cc7bbac0190fc834fbb3aef20d2e6d3d, type: 2}
   weaponName: 
-  fireRate: 0.25
+  fireRate: 0.5
   walkMultiplier: 0
   weaponIcon: {fileID: 0}
   projectileIcon: {fileID: 0}

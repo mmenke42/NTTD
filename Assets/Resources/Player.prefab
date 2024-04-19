@@ -1475,8 +1475,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -7.1490564, y: 1.9809988, z: -3.7789133}
-  - {x: -1.4400008, y: 1.980999, z: -0.51292574}
+  - {x: -10.980801, y: 1.9809983, z: 2.4717765}
+  - {x: -4.0024695, y: 1.9809985, z: 5.5999994}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -1620,6 +1620,7 @@ MonoBehaviour:
   mousePos: {x: 0, y: 0, z: 0}
   playerLookDirection: {x: 0, y: 0, z: 0}
   state: 0
+  bloodSplatterObj: {fileID: 0}
 --- !u!114 &6410629799103784124
 MonoBehaviour:
   m_ObjectHideFlags: 0
