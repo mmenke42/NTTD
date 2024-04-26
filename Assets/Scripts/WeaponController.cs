@@ -232,6 +232,11 @@ public class WeaponController:MonoBehaviour
         if (currentWeapon.currentAmmo > 0)
         {
             currentWeapon.PlayerShoot();
+
+            if (currentWeapon.weaponName != "Pistol")
+            {
+                currentWeapon.currentAmmo--;
+            }           
         }
     }
 
