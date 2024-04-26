@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using Unity.VisualScripting;
 using Unity.Mathematics;
+using System.Linq.Expressions;
 
 public class RangedWeapon : WeaponBase, IShoot
 {
@@ -31,6 +32,7 @@ public class RangedWeapon : WeaponBase, IShoot
 
     private ParticleSystem muzzleFlash;
 
+    [SerializeField] private GameObject muzzleLight;
 
     private void Awake()
     {
@@ -49,7 +51,7 @@ public class RangedWeapon : WeaponBase, IShoot
         //    Debug.LogWarning("No projectile prefab found");
         //}
 
-        muzzleFlash = muzzleFlashObj.GetComponentInChildren<ParticleSystem>();
+        muzzleFlash = muzzleFlashObj.GetComponentInChildren<ParticleSystem>();        
 
         muzzleFlash.gameObject.transform.position = shootPoint.position;
     }
@@ -83,6 +85,7 @@ public class RangedWeapon : WeaponBase, IShoot
         //Instantiate(newProjectile, shootPoint.position, Quaternion.LookRotation(Vector3.up, gameObject.transform.forward));
         
         muzzleFlash.Play();
+        StartCoroutine(flashEffector());
     }
 
     public void PlayerShoot()
@@ -99,6 +102,15 @@ public class RangedWeapon : WeaponBase, IShoot
 
         muzzleFlash.Play();
 
+        StartCoroutine(flashEffector());
+    }
+
+    IEnumerator flashEffector()
+    {
+        muzzleLight.gameObject.SetActive(true);
+        yield return new WaitForSeconds(.1f);
+        muzzleLight.gameObject.SetActive(false);
+        yield return null;
     }
 
     public void GainAmmo(int amountToGain)
