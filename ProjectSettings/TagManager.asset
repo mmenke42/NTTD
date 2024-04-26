@@ -30,6 +30,8 @@ TagManager:
   - Explosive
   - Crate
   - Lightcube
+  - Weapon
+  - LevelExit
   layers:
   - Default
   - TransparentFX

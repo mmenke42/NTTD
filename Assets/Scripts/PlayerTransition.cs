@@ -16,7 +16,7 @@ public class PlayerTransition : MonoBehaviour
 
     void TransitionPlayerToStartPosition()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.Find("NEW Player");
         player.transform.position = gameObject.transform.position;
 
 
