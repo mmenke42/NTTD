@@ -7,10 +7,11 @@ public class LevelLoader : MonoBehaviour
 {
     public static LevelLoader instance;
     [SerializeField] Animator transitionScene;
+    [SerializeField] private GameObject ImageObject;
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -19,7 +20,14 @@ public class LevelLoader : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        SceneManager.activeSceneChanged += OnSceneChanged;
     }
+
+    private void OnSceneChanged(Scene arg0, Scene arg1)
+    {
+        //ToggleImage(false);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,12 +44,30 @@ public class LevelLoader : MonoBehaviour
     {
         StartCoroutine(LoadScene());
     }
-
     IEnumerator LoadScene()
     {
-        transitionScene.SetTrigger("SceneEnd");
+        ToggleImage(true);
+        transitionScene.SetTrigger("SceneEnd"); 
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
+        var asyncLoadLevel = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+        asyncLoadLevel.allowSceneActivation = true;
+
+        while (!asyncLoadLevel.isDone)
+        {
+            yield return null;
+        }
+        asyncLoadLevel.allowSceneActivation = true;
+
+        yield return new WaitForSeconds(1.0f);
         transitionScene.SetTrigger("SceneBegin");
+        yield return new WaitForSeconds(1.5f);
+
+        ToggleImage(false);
+    }
+
+    private void ToggleImage(bool toggle)
+    {
+        ImageObject.SetActive(toggle);
     }
 }
