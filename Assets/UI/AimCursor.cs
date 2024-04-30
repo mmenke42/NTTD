@@ -55,9 +55,9 @@ public class AimCursor : MonoBehaviour
 
 
         cursorImage = gameObject.GetComponent<Image>();
-        tempColor = Color.white;
-        tempColor.a = 0;
-        cursorImage.color = tempColor;
+        //tempColor = Color.white;
+        //tempColor.a = 0;
+        //cursorImage.color = tempColor;
     }
 
     private void Start()
@@ -91,7 +91,7 @@ public class AimCursor : MonoBehaviour
 
         cursorVector = cursorLocation - cam.transform.position;
 
-        cursorImage.color = lightGreen;
+        //cursorImage.color = lightGreen;
     }
 
 
@@ -120,14 +120,14 @@ public class AimCursor : MonoBehaviour
     {
         if(!isPaused)
         {
-            tempColor = lightGreen;
+            //tempColor = lightGreen;
             tempColor.a = 1;
 
             isPaused = true;
         }
         else
         {
-            tempColor = Color.white;
+            //tempColor = Color.white;
             tempColor.a = 0;
             cursorImage.color = tempColor;
             isPaused = false;
