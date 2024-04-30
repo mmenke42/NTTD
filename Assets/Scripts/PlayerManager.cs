@@ -211,7 +211,7 @@ public class PlayerManager : MonoBehaviour
 
 
         //tracks time between shots, stopping at 0.
-        timeBetweenShots -= Time.deltaTime;
+        timeBetweenShots -= Time.deltaTime;       
 
     }
 
@@ -234,6 +234,7 @@ public class PlayerManager : MonoBehaviour
             playerSpawn = false;
         }
 
+        
     }
 
     private void LateUpdate()
@@ -264,19 +265,23 @@ public class PlayerManager : MonoBehaviour
 
     private void HandleShooting(InputAction.CallbackContext e)
     {
-
         //Cursor.lockState = CursorLockMode.Locked;
         //Cursor.visible = false;
 
         if (activeProjectiles < weaponController.currentWeapon.maxActiveProjectiles && timeBetweenShots <= 0)
         {
             timeBetweenShots = weaponController.currentWeapon.fireRate;
-            weaponController.PlayerShootWeapon();
-            //Shoot();
+
+            if (weaponController.currentWeapon.weaponName == "Thompson")
+            {                                
+                //idk                
+            }
+            else
+            {
+                weaponController.PlayerShootWeapon();
+            }            
         }
     }
-
-
 
 
     private void OnEnable()
