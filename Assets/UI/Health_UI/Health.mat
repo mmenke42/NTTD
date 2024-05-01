@@ -157,7 +157,7 @@ Material:
     - _Heart_Fourteen_Unlocked: 0
     - _Heart_Nine_Opacity: 1
     - _Heart_Nine_Unlocked: 0
-    - _Heart_One_Opacity: 1
+    - _Heart_One_Opacity: 0.35
     - _Heart_One_Unlocked: 1
     - _Heart_Seven_Opacity: 1
     - _Heart_Seven_Unlocked: 0
