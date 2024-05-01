@@ -485,9 +485,6 @@
         },
         {
             "m_Id": "7826fdc3135c465fb351dbec0a18a68c"
-        },
-        {
-            "m_Id": "edf09fa6a9264b998ae975b609d71ad0"
         }
     ],
     "m_GroupDatas": [],
@@ -2456,20 +2453,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "edf09fa6a9264b998ae975b609d71ad0"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "a2390a6630b643acb7ac93890e11cd80"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "ef64c041a76144febaaf043f1cabb2de"
                 },
                 "m_SlotId": 0
@@ -2711,8 +2694,8 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.3199999928474426,
-        "y": 0.029999999329447748
+        "x": 0.800000011920929,
+        "y": 0.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -3036,8 +3019,8 @@
     "m_ShaderOutputName": "Tiling",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.8999999761581421,
-        "y": 0.8999999761581421
+        "x": 0.0,
+        "y": 1.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -4035,7 +4018,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.30000001192092898,
-        "y": 0.10000000149011612
+        "y": -0.019999999552965165
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -4189,7 +4172,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.10000000149011612,
-        "y": 0.30000001192092898
+        "y": 0.20000000298023225
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -4210,7 +4193,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.20000000298023225,
-        "y": 0.20000000298023225
+        "y": 0.10000000149011612
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -5863,7 +5846,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.30000001192092898,
-        "y": 0.20000000298023225
+        "y": 0.10000000149011612
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -5912,7 +5895,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.10000000149011612,
-        "y": 0.20000000298023225
+        "y": 0.10000000149011612
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -7114,7 +7097,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.10000000149011612,
-        "y": 0.10000000149011612
+        "y": -0.019999999552965165
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -8412,7 +8395,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.30000001192092898,
-        "y": 0.30000001192092898
+        "y": 0.20000000298023225
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -8543,7 +8526,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.20000000298023225,
-        "y": 0.30000001192092898
+        "y": 0.20000000298023225
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -9433,7 +9416,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
-        "y": 0.30000001192092898
+        "y": 0.20000000298023225
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -11195,7 +11178,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.4000000059604645,
-        "y": 0.30000001192092898
+        "y": 0.20000000298023225
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -11912,7 +11895,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
-        "y": 0.10000000149011612
+        "y": -0.019999999552965165
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -12296,7 +12279,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"2aebbd2a3d84f774892af43d0dd62f68\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"88eca4b560fc44841bcddc4e32c00e9e\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -12882,7 +12865,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.4000000059604645,
-        "y": 0.10000000149011612
+        "y": -0.019999999552965165
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -15816,8 +15799,8 @@
     "m_ShaderOutputName": "Offset",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 0.8500000238418579,
-        "y": -0.07500000298023224
+        "x": 0.30000001192092898,
+        "y": 0.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -16549,7 +16532,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"76c5e23cb8db1d544bb7ce32a378b6de\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"b40f4b5e2cbd5c74a8c075ccc73cd46f\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -16567,7 +16550,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.4000000059604645,
-        "y": 0.20000000298023225
+        "y": 0.10000000149011612
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -17142,7 +17125,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"8d139964618cceb4bb5dae243b9ed294\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"992af8f7ea02ede4d9be68b3c210bfb2\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -17492,7 +17475,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": -0.20000000298023225,
-        "y": 0.10000000149011612
+        "y": -0.019999999552965165
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -18908,42 +18891,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "edf09fa6a9264b998ae975b609d71ad0",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -1848.0001220703125,
-            "y": -8842.0,
-            "width": 147.0,
-            "height": 34.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "f0fc5561ae9a4fb3a8c8fee3a388b46d"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "957e98bfd5064dcbb6887b295ab26e97"
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
     "m_ObjectId": "edf5c0cc9d6e475b9f5fe8e0fda0dcdf",
     "m_Id": 1,
@@ -19300,19 +19247,6 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
-    "m_ObjectId": "f0fc5561ae9a4fb3a8c8fee3a388b46d",
-    "m_Id": 0,
-    "m_DisplayName": "Turkey_Icon",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_BareResource": false
 }
 
 {
@@ -20523,7 +20457,7 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
-        "y": 0.20000000298023225
+        "y": 0.10000000149011612
     },
     "m_DefaultValue": {
         "x": 0.0,
