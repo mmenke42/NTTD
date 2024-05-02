@@ -1475,8 +1475,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -13.10437, y: 1.6129985, z: -33.104073}
-  - {x: -8.568399, y: 1.6129985, z: -33.794296}
+  - {x: 0.53542936, y: 1.9809985, z: -10.912431}
+  - {x: 4.505234, y: 1.9809985, z: -6.2399993}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -1596,6 +1596,7 @@ MonoBehaviour:
   CanCarryObjectOnBack: 1
   isDraggingObject: 0
   carriedObject: {fileID: 0}
+  isShooting: 0
   centerScreen: {x: 0, y: 0}
   mousePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &3057465918778892163

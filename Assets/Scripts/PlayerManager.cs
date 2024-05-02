@@ -53,6 +53,8 @@ public class PlayerManager : MonoBehaviour
     public static event EventHandler OnPlayerActivatePress;
     public static event EventHandler OnPlayerSpawn;
 
+    public bool isShooting = false;
+
     public class OnWeaponSwitchEventArgs : EventArgs
     {
         public KeyCode keyPressed;
@@ -145,10 +147,14 @@ public class PlayerManager : MonoBehaviour
 
     private void ChangedWeapon(InputAction.CallbackContext obj)
     {
-        OnWeaponChange?.Invoke(this, new OnWeaponSwitchEventArgs {
-            Qpressed = Keyboard.current.qKey.wasPressedThisFrame,
-            Epressed = Keyboard.current.eKey.wasPressedThisFrame
-        }); //Used for detecting weapon switch
+        if (isShooting == false)
+        {
+            OnWeaponChange?.Invoke(this, new OnWeaponSwitchEventArgs
+            {
+                Qpressed = Keyboard.current.qKey.wasPressedThisFrame,
+                Epressed = Keyboard.current.eKey.wasPressedThisFrame
+            }); //Used for detecting weapon switch
+        }        
     }
 
     private void cameraReturned(object sender, EventArgs e)
@@ -211,8 +217,21 @@ public class PlayerManager : MonoBehaviour
 
 
         //tracks time between shots, stopping at 0.
-        timeBetweenShots -= Time.deltaTime;       
+        timeBetweenShots -= Time.deltaTime;
 
+        if (isShooting == true)
+        {
+            if (activeProjectiles < weaponController.currentWeapon.maxActiveProjectiles && timeBetweenShots <= 0)
+            {
+                timeBetweenShots = weaponController.currentWeapon.fireRate;
+                weaponController.PlayerShootWeapon();
+            }
+
+            if (Mouse.current.leftButton.wasReleasedThisFrame)
+            {
+                isShooting = false;
+            }
+        }
     }
 
     Quaternion rotation;
@@ -267,20 +286,20 @@ public class PlayerManager : MonoBehaviour
     {
         //Cursor.lockState = CursorLockMode.Locked;
         //Cursor.visible = false;
-
-        if (activeProjectiles < weaponController.currentWeapon.maxActiveProjectiles && timeBetweenShots <= 0)
-        {
-            timeBetweenShots = weaponController.currentWeapon.fireRate;
-
-            if (weaponController.currentWeapon.weaponName == "Thompson")
-            {                                
-                //idk                
-            }
-            else
-            {
-                weaponController.PlayerShootWeapon();
-            }            
+                            
+        if (weaponController.currentWeapon.weaponName == "Thompson")
+        {                                
+            isShooting = true;
         }
+        else
+        {
+            if (activeProjectiles < weaponController.currentWeapon.maxActiveProjectiles && timeBetweenShots <= 0)
+            {
+                timeBetweenShots = weaponController.currentWeapon.fireRate;
+                weaponController.PlayerShootWeapon();
+            }
+                
+        }                    
     }
 
 
