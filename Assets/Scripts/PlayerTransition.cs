@@ -20,7 +20,6 @@ public class PlayerTransition : MonoBehaviour
         player.transform.position = gameObject.transform.position;
 
 
-
         Destroy(this.gameObject);
     }
 

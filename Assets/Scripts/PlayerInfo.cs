@@ -73,7 +73,8 @@ public class PlayerInfo:MonoBehaviour, IDamagable
 
 
     private void Start()
-    {
+    {        
+
         ownedWeapons = new List<WeaponInfo>();
         weaponController = GetComponent<WeaponController>();
 
