@@ -149,9 +149,9 @@ Material:
     - _Heart_Eleven_Unlocked: 0
     - _Heart_Fifteen_Opacity: 0.35
     - _Heart_Fifteen_Unlocked: 0
-    - _Heart_Five_Opacity: 1
+    - _Heart_Five_Opacity: 0.35
     - _Heart_Five_Unlocked: 1
-    - _Heart_Four_Opacity: 1
+    - _Heart_Four_Opacity: 0.35
     - _Heart_Four_Unlocked: 1
     - _Heart_Fourteen_Opacity: 0.35
     - _Heart_Fourteen_Unlocked: 0
@@ -167,11 +167,11 @@ Material:
     - _Heart_Ten_Unlocked: 0
     - _Heart_Thirteen_Opacity: 0.35
     - _Heart_Thirteen_Unlocked: 0
-    - _Heart_Three_Opacity: 1
+    - _Heart_Three_Opacity: 0.35
     - _Heart_Three_Unlocked: 1
     - _Heart_Twelve_Opacity: 0.35
     - _Heart_Twelve_Unlocked: 0
-    - _Heart_Two_Opacity: 1
+    - _Heart_Two_Opacity: 0.35
     - _Heart_Two_Unlocked: 1
     - _IsHeartOneUnlocked: 1
     - _IsHeartTwoUnlocked: 1

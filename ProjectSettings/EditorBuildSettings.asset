@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ChangesToLevel1/FuneralHomeArea.unity
     guid: e477d4265484dd74b81378b7367ebbd0
   - enabled: 1
-    path: Assets/Scenes/ChangesToLevel1/ScarpYardArea.unity
-    guid: e9a1bce91315d784ea1049f0c9a72463
-  - enabled: 1
     path: Assets/Scenes/ChangesToLevel1/NTTDEnding.unity
     guid: 50a0b818a9791dc43ad1da0b91b78b0c
   m_configObjects: {}
