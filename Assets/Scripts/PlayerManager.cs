@@ -134,6 +134,8 @@ public class PlayerManager : MonoBehaviour
         //CheckWeaponChange();
 
         weaponController.InitializeWeaponUI();
+
+
     }
 
     public static RangedWeapon currentWeapon_ref;
@@ -247,18 +249,18 @@ public class PlayerManager : MonoBehaviour
 
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 65.0f);
 
-        if (playerSpawn)
-        {
-            OnPlayerSpawn?.Invoke(this, EventArgs.Empty);
-            playerSpawn = false;
-        }
+
 
         
     }
 
     private void LateUpdate()
     {
-
+        if (playerSpawn)
+        {
+            OnPlayerSpawn?.Invoke(this, EventArgs.Empty);
+            playerSpawn = false;
+        }
 
     }
 

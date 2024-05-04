@@ -43,13 +43,14 @@ public class WeaponScreen : MonoBehaviour
     {
         weaponController = gameObject.GetComponent<WeaponController>();
 
-        PlayerManager.OnPlayerSpawn += UpdateWeaponInfo;
-        PlayerManager.OnPlayerSpawn += Update_WeaponUI_CurrentProjectiles;
-        RangedWeapon.OnPlayerShoot += Update_WeaponUI_CurrentProjectiles;
-        PlayerProjectile.OnExplosion += Update_WeaponUI_CurrentProjectiles;
-        PlayerManager.OnPlayerWeaponChange += UpdateWeaponInfo;
+        //PlayerManager.OnPlayerSpawn += UpdateWeaponInfo;
+        //PlayerManager.OnPlayerSpawn += Update_WeaponUI_CurrentProjectiles;
+        PlayerManager.OnPlayerSpawn += UpdateWeaponUI;
+        RangedWeapon.OnPlayerShoot += UpdateWeaponUI;
+        //PlayerProjectile.OnExplosion += Update_WeaponUI_CurrentProjectiles;
+        //PlayerManager.OnPlayerWeaponChange += UpdateWeaponInfo;
         PlayerManager.OnPlayerWeaponChange += UpdateWeaponUI;
-        PlayerManager.OnPlayerWeaponChange += Update_WeaponUI_CurrentProjectiles;
+        //PlayerManager.OnPlayerWeaponChange += Update_WeaponUI_CurrentProjectiles;
        
         //PlayerManager.OnPlayerDetonate += Update_ProjectileUI_CurrentProjectiles;
     }
@@ -95,15 +96,16 @@ public class WeaponScreen : MonoBehaviour
 
     void Update_WeaponUI_AmmoIcon()
     {
-        WeaponScreenMaterial.SetTexture("_Ammo_Texture", tempWeaponInfo.ammoCountIcon);
+        //WeaponScreenMaterial.SetTexture("_Ammo_Texture", tempWeaponInfo.ammoCountIcon);
     }
 
 
     void Update_WeaponUI_CurrentProjectiles(object sender, System.EventArgs e)
     {
-        
+        /*
         maxProjOnScreen = PlayerManager.currentWeapon_ref.maxActiveProjectiles;
         activeProjectiles = PlayerManager.activeProjectiles;
+
 
         //set current amount of ammo allowed on screen at one time
         for(int i = 0; i < maxProjOnScreen; i++)
@@ -151,8 +153,9 @@ public class WeaponScreen : MonoBehaviour
                 UpdateWeaponUI();
             }
         }
-
-        Update_WeaponUI_AmmoCount();
+        */
+        
+        UpdateWeaponUI();
     }
 
 
@@ -169,7 +172,7 @@ public class WeaponScreen : MonoBehaviour
         
         WeaponScreenMaterial.SetTexture("_TensNumber", numbers[ammoTensCount]);
 
-
+        /*
         if(currentAmmo == 0)
         {
             WeaponScreenMaterial.SetColor("_AmmoCountColor", lightRed);
@@ -178,7 +181,7 @@ public class WeaponScreen : MonoBehaviour
         {
             WeaponScreenMaterial.SetColor("_AmmoCountColor", lightGreen);
         }
-
+        */
 
     }
 

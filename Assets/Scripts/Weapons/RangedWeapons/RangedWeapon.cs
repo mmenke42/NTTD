@@ -54,6 +54,8 @@ public class RangedWeapon : WeaponBase, IShoot
         muzzleFlash = muzzleFlashObj.GetComponentInChildren<ParticleSystem>();        
 
         muzzleFlash.gameObject.transform.position = shootPoint.position;
+
+        currentAmmo = maxAmmo;
     }
 
     private void Update()
@@ -96,9 +98,10 @@ public class RangedWeapon : WeaponBase, IShoot
 
         Instantiate(newProjectile, shootPoint.position, shootPoint.rotation);
 
+        currentAmmo--;
         //Instantiate(newProjectile, shootPoint.position, Quaternion.LookRotation(Vector3.up, gameObject.transform.forward));        
 
-        //OnPlayerShoot?.Invoke(this, EventArgs.Empty);
+        OnPlayerShoot?.Invoke(this, EventArgs.Empty);
 
         muzzleFlash.Play();
 

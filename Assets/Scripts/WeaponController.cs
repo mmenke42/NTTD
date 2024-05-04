@@ -73,6 +73,7 @@ public class WeaponController:MonoBehaviour
 
         PlayerManager.OnWeaponChange += ChangedWeapon;
 
+        InitializeWeaponUI();
 
         //maxActiveProjectiles_ref = currentWeapon.maxActiveProjectiles;
 
