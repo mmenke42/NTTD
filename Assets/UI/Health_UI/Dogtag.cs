@@ -17,7 +17,7 @@ public class Dogtag : MonoBehaviour
     int maximumHP;
 
     float filledHP = 1.00f;
-    float emptyHP = 0.35f;
+    float emptyHP = 0f;
 
 
     string[] heartUnlocked = {"_Heart_One_Unlocked", "_Heart_Two_Unlocked", "_Heart_Three_Unlocked", "_Heart_Four_Unlocked", "_Heart_Five_Unlocked", "_Heart_Six_Unlocked", "_Heart_Seven_Unlocked", "_Heart_Eight_Unlocked", "_Heart_Nine_Unlocked", "_Heart_Ten_Unlocked", "_Heart_Eleven_Unlocked", "_Heart_Twelve_Unlocked", "_Heart_Thirteen_Unlocked", "_Heart_Fourteen_Unlocked", "_Heart_Fifteen_Unlocked"};

@@ -14,6 +14,7 @@ public class WeaponSO : ScriptableObject
     public string fireWeaponSound;
 
     public int maxAmmo;
+    public bool isInfinite;
 
     public Texture2D weaponIcon;
     public Texture2D projectileIcon;

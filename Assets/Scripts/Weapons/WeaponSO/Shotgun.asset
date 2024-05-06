@@ -19,6 +19,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5914616067517450014, guid: 9cc230cf906556a47ac3be17ab942d3e, type: 3}
   fireWeaponSound: bazooka_fire
   maxAmmo: 10
-  weaponIcon: {fileID: 2800000, guid: e7c2037f70a083a4989d1e8a8a167c62, type: 3}
+  weaponIcon: {fileID: 2800000, guid: 92dcd2b2ce98e4147b4fd8a1a388c519, type: 3}
   projectileIcon: {fileID: 2800000, guid: c4e1c82d75f4fe84b95518d10a8560e7, type: 3}
   ammoCountIcon: {fileID: 2800000, guid: f79c3ef19c3d07340820ccf4bb4a80e5, type: 3}

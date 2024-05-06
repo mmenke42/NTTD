@@ -162,15 +162,25 @@ public class WeaponScreen : MonoBehaviour
 
     void Update_WeaponUI_AmmoCount()
     {
-        currentAmmo = (float)tempWeaponInfo.currentAmmo;
-        maxAmmo = (float)tempWeaponInfo.maxAmmo;
+        if (tempWeaponInfo.isInfinite)
+        {
+            WeaponScreenMaterial.SetInt("_isInfinite", 1);
+        }
 
-        int ammoTensCount = (int)(currentAmmo/10);
-        int ammoOnesCount = (int)(currentAmmo - (ammoTensCount * 10));
+        else
+        {
+            WeaponScreenMaterial.SetInt("_isInfinite", 0);
 
-        WeaponScreenMaterial.SetTexture("_OnesNumber", numbers[ammoOnesCount]);
-        
-        WeaponScreenMaterial.SetTexture("_TensNumber", numbers[ammoTensCount]);
+            currentAmmo = (float)tempWeaponInfo.currentAmmo;
+            maxAmmo = (float)tempWeaponInfo.maxAmmo;
+
+            int ammoTensCount = (int)(currentAmmo / 10);
+            int ammoOnesCount = (int)(currentAmmo - (ammoTensCount * 10));
+
+            WeaponScreenMaterial.SetTexture("_OnesNumber", numbers[ammoOnesCount]);
+
+            WeaponScreenMaterial.SetTexture("_TensNumber", numbers[ammoTensCount]);
+        }
 
         /*
         if(currentAmmo == 0)

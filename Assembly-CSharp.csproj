@@ -223,6 +223,7 @@
     <Compile Include="Assets\Scripts\Utility\FadeObject.cs" />
     <Compile Include="Assets\Scripts\Utility\ItemHover.cs" />
     <Compile Include="Assets\Prefabs\Kawaii_Tanks_Project (Free)\Scripts\Damage_Control_CS.cs" />
+    <Compile Include="Assets\Scripts\ControlToMainGame.cs" />
     <Compile Include="Assets\Scripts\EnemyAI\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponUpgrade.cs" />

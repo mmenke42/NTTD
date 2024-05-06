@@ -20,6 +20,7 @@ public class RangedWeapon : WeaponBase, IShoot
     public int maxActiveProjectiles;
     public int maxAmmo;
     public int currentAmmo;
+    public bool isInfinite;
 
 
     private float time;
@@ -98,7 +99,7 @@ public class RangedWeapon : WeaponBase, IShoot
 
         Instantiate(newProjectile, shootPoint.position, shootPoint.rotation);
 
-        currentAmmo--;
+        //currentAmmo--;
         //Instantiate(newProjectile, shootPoint.position, Quaternion.LookRotation(Vector3.up, gameObject.transform.forward));        
 
         OnPlayerShoot?.Invoke(this, EventArgs.Empty);
@@ -152,6 +153,7 @@ public class RangedWeapon : WeaponBase, IShoot
                 ammoCountIcon = stats.ammoCountIcon;
                 maxAmmo = stats.maxAmmo;
                 currentAmmo = maxAmmo;
+                isInfinite = stats.isInfinite;
             }
             else
             {
