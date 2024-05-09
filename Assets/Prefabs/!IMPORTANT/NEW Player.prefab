@@ -105,8 +105,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.012936373, z: 0, w: 0.9999163}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7933604257637699246}
   - {fileID: 4346531356137338573}
@@ -240,6 +240,7 @@ MonoBehaviour:
   CanCarryObjectOnBack: 1
   isDraggingObject: 0
   carriedObject: {fileID: 0}
+  isShooting: 0
   centerScreen: {x: 0, y: 0}
   mousePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &8360772466743078511

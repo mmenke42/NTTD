@@ -333,6 +333,7 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
         health -= passedDamage;
         bloodSplatter.Play();
         OnTakeDamage?.Invoke(this, EventArgs.Empty);
+        enemyAttackRange_BecomeAggro = 30;
     }
 
 

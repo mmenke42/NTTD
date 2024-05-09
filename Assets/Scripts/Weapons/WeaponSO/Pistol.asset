@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pistol
   m_EditorClassIdentifier: 
   weaponName: Pistol
-  fireRate: 0.5
+  fireRate: 0.1
   maxActiveAmount: 10
   walkMultiplier: 1
   projectilePrefab: {fileID: 9099515323765611235, guid: 1732aaa49ab4d154fa14c34d18c4d5bb, type: 3}
