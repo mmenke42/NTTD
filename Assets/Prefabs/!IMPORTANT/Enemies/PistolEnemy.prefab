@@ -132,8 +132,8 @@ MonoBehaviour:
   animController: {fileID: 9100000, guid: d59a7ece786ec65438d99692ac722e95, type: 2}
   weaponProjectileSpawnNode: {fileID: 0}
   SetToAttack: 1
-  enemyAttackRange_BecomeAggro: 10
-  enemyAttackRange_AttackRange: 1
+  enemyAttackRange_BecomeAggro: 8
+  enemyAttackRange_AttackRange: 8
   isAggrod: 0
   inShootRange: 1
   playerMask:

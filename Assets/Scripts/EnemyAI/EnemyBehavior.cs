@@ -368,8 +368,8 @@ public class EnemyBehavior : MonoBehaviour, IDamagable
             maxHealth = stats.Health;
             health = maxHealth;
 
-            enemyAttackRange_BecomeAggro = stats.AggroRange;
-            enemyAttackRange_AttackRange = stats.AtackRange;
+            //enemyAttackRange_BecomeAggro = stats.AggroRange;
+            //enemyAttackRange_AttackRange = stats.AtackRange;
 
             playerMask = stats.playerMask;
             environmentMask = stats.environmentMask;

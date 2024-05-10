@@ -867,6 +867,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8553549918869688137, guid: 15b0db3e447362d44beba9e816dda294, type: 3}
+      propertyPath: enemyAttackRange_AttackRange
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553549918869688137, guid: 15b0db3e447362d44beba9e816dda294, type: 3}
+      propertyPath: enemyAttackRange_BecomeAggro
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
