@@ -18,7 +18,7 @@ MonoBehaviour:
   MP: 0
   AP: 0
   DEF: 0
-  Health: 5
+  Health: 10
   AggroRange: 8
   AtackRange: 8
   playerMask:

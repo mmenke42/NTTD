@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/NTTDTitle.unity
     guid: 389850fd7da6e30418b9ee747614bf01
   - enabled: 1
+    path: Assets/Scenes/ChangesToLevel1/StoryScreen.unity
+    guid: f38d461a957f0f34c95d62108785b7fe
+  - enabled: 1
     path: Assets/Scenes/ChangesToLevel1/NTTDControlsScene.unity
     guid: d638d3c3d880c154faa47b5b7619f560
   - enabled: 1
