@@ -2,13 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyScript : MonoBehaviour
+public class KeyOpenDoor : MonoBehaviour
 {
-    [SerializeField]
-    private Animator myDoor = null;
-
-    [SerializeField]
-    private bool openTrigger = false;
+    public DoorWithKey doorWithKey;
 
     // Start is called before the first frame update
     void Start()
@@ -16,15 +12,11 @@ public class KeyScript : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.CompareTag("Player"))
         {
-            if (openTrigger)
-            {
-                myDoor.Play("DoorOpen", 0, 0.0f);
-                gameObject.SetActive(false);
-            }
+            doorWithKey.PlayerHasKey();
             Destroy(gameObject);
         }
     }
